@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="clear.png">
+</head>
+<body>
+    <main>
+        <header class="search">
+            <input type="text" placeholder="enter city name" spellcheck="false">
+            <button><img src="search.png" alt="search" ></button>
+        </header>
+        <div class="error">
+            <p>Invalid city name</p>
+        </div>
+        <div class="weather">
+            <section >
+                <img src="clear.png" class="weather-icon">
+                <div>
+                    <h1 class="temp">22°c</h1>
+                    <p class="city">Morocco</p>
+                </div>
+            </section>
+            <footer>
+                <div class="div1">
+                    <img src="humidity.png" >
+                    <span>
+                        <p class="humidity">53%</p>
+                        <p>Humditiy</p>
+                    </span>
+                </div>
+                <div class="div2">
+                    <img src="wind.png" alt="">
+                    <span>
+                        <p class="wind">15Km/h</p>
+                        <p>Wind Speed</p>
+                    </span>
+                </div>
+            </footer>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    <!-- https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key} -->
+</body>
+</html>
